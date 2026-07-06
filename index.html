@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h1>AWS AgentCore Portfolio</h1>
+    <h1>AWS AgentCore</h1>
 
     <h2>Secure AI Ticket Routing System</h2>
 
@@ -20,43 +20,30 @@
     </p>
 
     <h2>Architecture</h2>
-
-    <img src="images/architecture.jpg"
+   
+    <img src="images/thumbnail.png"
          alt="Architecture Diagram"
          width="800">
-
-    <h2>AWS Services Used</h2>
-
-    <ul>
-        <li>Amazon Bedrock AgentCore Runtime</li>
-        <li>Amazon Bedrock Knowledge Base</li>
-        <li>Amazon OpenSearch Serverless</li>
-        <li>Amazon S3</li>
-        <li>Amazon VPC</li>
-        <li>Private Subnets</li>
-        <li>VPC Endpoints</li>
-        <li>Amazon ECR</li>
-        <li>Amazon CloudWatch</li>
-    </ul>
-
     <h2>Key Features</h2>
-
     <ul>
         <li>Secure deployment inside a Custom VPC</li>
         <li>Two Private Subnets</li>
         <li>Knowledge Base Integration</li>
         <li>CrewAI Ticket Routing Agent</li>
         <li>Private connectivity using VPC Endpoints</li>
+        <li>ECR and images used for creating agent</li>
     </ul>
-
+    <h2>Flow Diagram</h2>
+     <img src="images/flow.png"
+         alt="Flow Diagram"
+         width="500">
+    
     <h2>Challenges Solved</h2>
 
     <ul>
-        <li>Configured Interface and Gateway VPC Endpoints.</li>
+        <li>403 forbidden in ECR or something similar IAM need to be fixed.</li>
         <li>Resolved Docker image pull timeout by fixing the S3 Gateway Endpoint route table association.</li>
-        <li>Configured OpenSearch Serverless VPC Endpoint for Knowledge Base access.</li>
-        <li>Successfully deployed AgentCore Runtime inside a private VPC.</li>
+        <li>Configured OpenSearch Serverless VPC Endpoint for Knowledge Base access timeout error.</li>
     </ul>
-
 </body>
 </html>
