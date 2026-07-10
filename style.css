@@ -53,9 +53,52 @@ nav a {
     font-weight: bold;
     text-align:center;
 }
+card {
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
+.card img {
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
 nav a:hover {
     color: orange;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.project-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+@media (max-width:768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 section {

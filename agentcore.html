@@ -1,0 +1,49 @@
+<html>
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AWS Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Secure AI Ticket Routing System</h2>
+    <p>
+        A production-style AI application built using Amazon Bedrock AgentCore,
+        Amazon Bedrock Knowledge Base, and CrewAI. The application is deployed
+        inside a custom VPC with private subnets and uses VPC Endpoints for
+        secure communication with AWS services.
+    </p>
+
+    <h2>Architecture</h2>
+   
+    <img src="images/thumbnail.png"
+         alt="Architecture Diagram"
+         width="800">
+    <h2>Key Features</h2>
+    <ul>
+        <li>Secure deployment inside a Custom VPC</li>
+        <li>Two Private Subnets</li>
+        <li>Knowledge Base Integration</li>
+        <li>CrewAI Ticket Routing Agent</li>
+        <li>Private connectivity using VPC Endpoints</li>
+        <li>ECR and images used for creating agent</li>
+    </ul>
+    <h2>Flow Diagram</h2>
+     <img src="images/flow.png"
+         alt="Flow Diagram"
+         width="500">
+    
+    <h2>Challenges Solved</h2>
+
+    <ul>
+        <li>403 forbidden in ECR or something similar IAM need to be fixed.</li>
+        <li>Resolved Docker image pull timeout by fixing the S3 Gateway Endpoint route table association.</li>
+        <li>Configured OpenSearch Serverless VPC Endpoint for Knowledge Base access timeout error.</li>
+    </ul>
+    </section>
+    </div>
+ </body>
+ </html>

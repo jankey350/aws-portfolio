@@ -1,0 +1,41 @@
+<html>
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AWS Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Springboot (CRUD) on ECS Fargate</h2>
+    <p>
+        A simple springboot application with CRUD operations
+        deployed in ECS Fargate.The data from springboot application is persisted
+        in RDS database.
+    </p>
+
+    <h2>Architecture</h2>
+   
+    <img src="images/ecstasks.png"
+         alt="Architecture Diagram"
+         width="800">
+    <h2>Key Features</h2>
+    <ul>
+        <li>Springboot Application.</li>
+        <li>ECR for storing the dokerized image.</li>
+        <li>RDS database for storing data.</li>
+        <li>Secrets for storing database credentials.</li>
+        <li>Configuring security groups.</li>
+    </ul>
+    <h2>Challenges Solved</h2>
+
+    <ul>
+        <li>The ecs task stopped immediately after launch.Used Cloud watch to debug and resolve.</li>
+        <li>Security Groups configuration was bit challenging.</li>
+    </ul>
+    </section>
+    </div>
+ </body>
+ </html>

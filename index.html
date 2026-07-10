@@ -11,8 +11,8 @@
 <body>
   <nav>
     <a href="#" onclick="showSection('home')">|Home|</a>
-    <a href="#" onclick="showSection('projects')">|AgentCore|</a>
-    <a href="#" onclick="showSection('projectserverless')">|Kiro|</a>
+    <a href="#" onclick="showSection('projects')">|Projects|</a>
+    <a href="#" onclick="showSection('journey')">|Journey|</a>
 </nav>
     
 <div id="home" class="content-section">
@@ -30,50 +30,49 @@
     </p>
  </div>
   <div id="projects" class="content-section" style="display:none;">
-    <h1>AWS AgentCore</h1>
+<section >
 
-    <h2>Secure AI Ticket Routing System</h2>
+    <h1>My Projects</h1>
 
-    <p>
-        A production-style AI application built using Amazon Bedrock AgentCore,
-        Amazon Bedrock Knowledge Base, and CrewAI. The application is deployed
-        inside a custom VPC with private subnets and uses VPC Endpoints for
-        secure communication with AWS services.
-    </p>
+    <div class="project-grid">
 
-    <h2>Architecture</h2>
-   
-    <img src="images/thumbnail.png"
-         alt="Architecture Diagram"
-         width="800">
-    <h2>Key Features</h2>
-    <ul>
-        <li>Secure deployment inside a Custom VPC</li>
-        <li>Two Private Subnets</li>
-        <li>Knowledge Base Integration</li>
-        <li>CrewAI Ticket Routing Agent</li>
-        <li>Private connectivity using VPC Endpoints</li>
-        <li>ECR and images used for creating agent</li>
-    </ul>
-    <h2>Flow Diagram</h2>
-     <img src="images/flow.png"
-         alt="Flow Diagram"
-         width="500">
-    
-    <h2>Challenges Solved</h2>
+        <div class="project-box">
+            <h2>🤖</h2>
+            <h3>AI Ticket Routing</h3>
+            <p>AgentCore • Bedrock • Knowledge Base  • CrewAI</p>
+            <a href="agentcore.html" class="btn">View →</a>
+        </div>
+       <div class="project-box">
+            <h2>🤖</h2>
+            <h3>Kiro</h3>
+            <p>Gateway • Lambda •  Dynamodb • Cloudfromation</p>
+            <a href="kiro.html">View →</a>
+        </div>
 
-    <ul>
-        <li>403 forbidden in ECR or something similar IAM need to be fixed.</li>
-        <li>Resolved Docker image pull timeout by fixing the S3 Gateway Endpoint route table association.</li>
-        <li>Configured OpenSearch Serverless VPC Endpoint for Knowledge Base access timeout error.</li>
-    </ul>
-    </section>
+        <div class="project-box">
+            <h2>☕</h2>
+            <h3>Spring Boot ECS</h3>
+            <p>Docker • ECS • RDS • Secrets</p>
+            <a href="springboot.html">View →</a>
+        </div>
+
+        <div class="project-box">
+            <h2>🧠</h2>
+            <h3>AI Memory Agent</h3>
+            <p>Coming Soon</p>
+            <a href="#">View →</a>
+        </div>
+
+        <div class="project-box">
+            <h2>📊</h2>
+            <h3>SageMaker MLOps</h3>
+            <p>Coming Soon</p>
+            <a href="#">View →</a>
+        </div>
+
     </div>
-<div id="projectserverless" class="content-section" style="display:none;">
- <h2>Using Kiro(Spec Driven Development)</h2>
-<img src="images/serverless.jpg"
-         alt="Using Kiro"
-         width="700">
+
+</section>
 </div>
 <div id="journey" class="content-section" style="display:none;">
     <h2>My Journey</h2>
