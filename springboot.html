@@ -18,22 +18,25 @@
 
     <h2>Architecture</h2>
    
-    <img src="images/ecstasks.png"
+    <img src="images/ecstasks.jpg"
          alt="Architecture Diagram"
          width="800">
     <h2>Key Features</h2>
     <ul>
-        <li>Springboot Application.</li>
+        <li>Springboot Application deployed in ecs fargate.</li>
         <li>ECR for storing the dokerized image.</li>
         <li>RDS database for storing data.</li>
         <li>Secrets for storing database credentials.</li>
         <li>Configuring security groups.</li>
+        <li>Configuring load balancer and ecs service.</li>
+
     </ul>
     <h2>Challenges Solved</h2>
 
     <ul>
         <li>The ecs task stopped immediately after launch.Used Cloud watch to debug and resolve.</li>
         <li>Security Groups configuration was bit challenging.</li>
+        <li>ECS tasks was not reachable through ALB because of subnet and AZ configuration.</li>
     </ul>
     </section>
     </div>
