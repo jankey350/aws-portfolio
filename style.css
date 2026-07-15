@@ -1,32 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #f4f6f9;
     margin: 0;
     padding: 30px;
-    color:whitesmoke;
+    color: #333;
 }
-
 
 h1 {
     text-align: center;
-    color:  whitesmoke;
+    color: #1f4e79;
 }
 
 h2 {
-    color:  #1f4e79;
-    border-bottom: 2px solid  #1f4e79;
+    color: #0b5ed7;
+    border-bottom: 2px solid #0b5ed7;
     padding-bottom: 5px;
     margin-top: 40px;
 }
-#journey h2 p{
-color:whitesmoke;
 
+p {
+    line-height: 1.6;
+    font-size: 16px;
 }
 .imgContainer{
     float:left;
 }
 .imgContainer1{
     float:down;
+}
+ul {
+    line-height: 1.8;
 }
 
 img {
@@ -67,15 +70,6 @@ card {
     transform: translateY(-5px);
     transition: 0.3s;
 }
-
-.card body {
-    font-family: Arial, sans-serif;
-    background-color: whitesmoke;
-    margin: 0;
-    padding: 30px;
-    color:black;
-}
-
 nav a:hover {
     color: orange;
 }
@@ -88,13 +82,12 @@ nav a:hover {
 }
 
 .project-box {
-    background: whitesmoke;
+    background: white;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     text-align: center;
     transition: 0.3s;
-    color: black;
 }
 
 .project-box:hover {
